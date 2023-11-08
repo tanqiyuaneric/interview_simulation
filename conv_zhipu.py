@@ -42,7 +42,8 @@ def generate_sample(tmp):
         {
             "role": "user",
             "content": "Thank you for accepting our interview. My first question for today's interview is: What do "
-                       "you think liberal arts is? Please provide a detailed answer based on your personal understanding "
+                       "you think liberal arts is? Please provide a detailed answer based on your personal "
+                       "understanding"
                        "of liberal arts. "
         },
     ]
