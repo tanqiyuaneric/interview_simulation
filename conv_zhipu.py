@@ -33,7 +33,6 @@ def generate_sample(tmp):
     major = random.sample(majors, 1)[0]
     grade = random.sample(['first', 'second', 'third', 'fourth'], 1)[0]
 
-
     prompt = [
         {
             "role": "assistant",
@@ -65,7 +64,6 @@ def generate_sample(tmp):
     except:
         a1 = ''
 
-
     prompt.append({
         "role": "assistant",
         "content": a1})
@@ -96,7 +94,7 @@ def generate_sample(tmp):
 
 
 if __name__ == '__main__':
-    samples = {f'sample{i}': generate_sample(1.5+random.random()) for i in tqdm(range(1000))}
+    samples = {f'sample{i}': generate_sample(1.5 + random.random()) for i in tqdm(range(1000))}
     print(samples)
     with open('samples.json', 'w') as json_file:
         json.dump(samples, json_file)
